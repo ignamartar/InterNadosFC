@@ -2,7 +2,6 @@
 
 *{
     margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 
@@ -46,13 +45,12 @@ header nav ul li a{
 
 /*estilos de main de "jugadores"*/
 
-.bg-main{
-    height: 400px;
+.jugadores main h1{
+    text-align: center;
 }
 
 
 .contenedor{
-    padding: 150px;
     display: grid;
     gap: 10px;
     grid-template-columns: repeat(4, 1fr);
@@ -66,98 +64,53 @@ img {
    
 
 .Cesar {
-    height: 300px;
-    width: 300px;
     text-align: left;
     grid: 10px;
-    transition: 0.5s;
-   }
-
-.Cesar:hover{
-    transform: scale(1.1);
-    transition: 0.5s;
 }
 
    .Diego {
-    height: 300px;
-    width: 300px;
+   
     text-align: left;
-    transition: 0.5s;
-   }
-
-   .Diego:hover{
-    transform: scale(1.1);
-    transition: 0.5s;
+    grid: 10px;
 }
 
    .Tari {
-    height: 400px;
-    width: 400px;
-    padding-top: 200px;
-    padding-bottom: 80px;
+   
     text-align: left;
-    transition: 0.5s;
-   }
-
-   .Tari:hover{
-    transform: scale(1.1);
-    transition: 0.5s;
+    grid: 10px;
 }
-
    .Floretta {
-    height: 300px;
-    width: 300px;
+ 
     text-align: left;
-    transition: 0.5s;
-   }
-
-   .Floretta:hover{
-    transform: scale(1.1);
     transition: 0.5s;
 }
 
    .Gamon {
-    height: 300px;
-    width: 300px;
+ 
     text-align: left;
-    transition: 0.5s;
-   }
-
-   .Gamon:hover{
-    transform: scale(1.1);
-    transition: 0.5s;
+    grid: 10px;
 }
 
 .Moreno {
-    padding-top: 200px;
-    height: 300px;
-    width: 300px;
-    text-align: left;
-    transition: 0.5s;
-   }
-
-.Moreno:hover{
-    transform: scale(1.1);
-    transition: 0.5s;
-}
-
-.Lucio {
-    height: 300px;
-    width: 300px;
+  
     text-align: left;
     grid: 10px;
-    transition: 0.5s;
-   }
-
-.Lucio:hover{
-    transform: scale(1.1);
-    transition: 0.5s;
+}
+.Lucio {
+    
+    text-align: left;
+    grid: 10px;
 }
 
+.Mati {
+ 
+    text-align: left;
+    grid: 10px;
+}
+  
 
 main{
     text-align: center;
-    padding: 5px 100px 5px 100px;
     font-family: 'Roboto', sans-serif;
     margin: 1px 20px;
 }
@@ -167,6 +120,20 @@ main{
     padding-right: 20px;
 }
 
+
+/*estilos de resumenes*/
+
+.portadas{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+   }
 
 /*estilos de fixture*/
 
