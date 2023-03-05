@@ -4,6 +4,8 @@
   box-sizing: border-box; }
 
 /*estilos genericos*/
+
+
 /*estilos de inicio*/
 header {
   background-color: #99d9ea;
@@ -34,47 +36,25 @@ header nav ul li a {
 .jugadores main h1 {
   text-align: center; }
 
-.contenedor {
-  display: grid;
-  gap: 10px;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 1fr 1fr; }
+
 
 img {
   max-width: 100%;
   max-height: 100%; }
 
-.Cesar {
-  text-align: left;
-  grid: 10px; }
 
-.Diego {
-  text-align: left;
-  grid: 10px; }
+  .players{
+    text-align: left;
+    padding-top: 80px;
+    grid: 10px;
+    transition: 0.5s;
+  }
 
-.Tari {
-  text-align: left;
-  grid: 10px; }
+.players:hover{
+   transform: scale(1.1);
+   transition: 0.5s;
+}
 
-.Floretta {
-  text-align: left;
-  transition: 0.5s; }
-
-.Gamon {
-  text-align: left;
-  grid: 10px; }
-
-.Moreno {
-  text-align: left;
-  grid: 10px; }
-
-.Lucio {
-  text-align: left;
-  grid: 10px; }
-
-.Mati {
-  text-align: left;
-  grid: 10px; }
 
 main {
   text-align: center;
@@ -86,11 +66,8 @@ main {
   padding-right: 20px; }
 
 /*estilos de resumenes*/
-.portadas {
-  display: grid;
-  gap: 10px;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 1fr 1fr; }
+
+
 
 img {
   max-width: 100%;
@@ -102,9 +79,57 @@ img {
   list-style: none;
   width: 200px; }
 
+  /*estilos del footer*/
+
 footer {
-  margin-top: 100%;
+  margin-top: 300px;
   width: 100%;
   background-color: #99d9ea;
   font-family: 'Roboto', sans-serif;
-  bottom: 0; }
+  bottom: 0; 
+}
+
+/*estilos para celulares*/
+
+@media (max-width:575px){
+  .contenedor {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 1fr 1fr; }
+
+    .portadas {
+      display: grid;
+      gap: 10px;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: 1fr 1fr; }
+}
+
+/*estilos para tablets*/
+
+@media (min-width: 576px) {
+  .contenedor {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 1fr; }
+
+    .portadas {
+      display: grid;
+      gap: 10px;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: 1fr 1fr; }
+}
+
+@media (min-width: 1000px){
+.contenedor {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 1fr; }
+.portadas {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 1fr; }
+}
