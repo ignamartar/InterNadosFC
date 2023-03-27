@@ -5,6 +5,11 @@
     box-sizing: border-box;
 }
 
+
+
+@import "variables/vars";
+
+
 /*estilos genericos*/
  
 .table{
@@ -13,7 +18,7 @@
 /*estilos de inicio*/
 
 header{
-    background-color: rgb(153, 217, 234);
+    background-color: $color-barras;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -47,80 +52,37 @@ header nav ul li a{
 
 /*estilos de main de "jugadores"*/
 
-.jugadores main h1{
-    text-align: center;
-}
-
-
-.contenedor{
-    display: grid;
-    gap: 10px;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1fr 1fr;
-}
-
-img {
+.jugadores main h1 {
+    text-align: center; }
+  
+  
+  
+  img {
     max-width: 100%;
-    max-height: 100%;
-   }
-   
-
-.Cesar {
-    text-align: left;
-    grid: 10px;
-}
-
-   .Diego {
-   
-    text-align: left;
-    grid: 10px;
-}
-
-   .Tari {
-   
-    text-align: left;
-    grid: 10px;
-}
-   .Floretta {
- 
-    text-align: left;
-    transition: 0.5s;
-}
-
-   .Gamon {
- 
-    text-align: left;
-    grid: 10px;
-}
-
-.Moreno {
+    max-height: 100%; }
   
-    text-align: left;
-    grid: 10px;
-}
-.Lucio {
-    
-    text-align: left;
-    grid: 10px;
-}
-
-.Mati {
- 
-    text-align: left;
-    grid: 10px;
-}
   
-
-main{
+    .players{
+      text-align: left;
+      padding-top: 80px;
+      grid: 10px;
+      transition: 0.5s;
+    }
+  
+  .players:hover{
+     transform: scale(1.1);
+     transition: 0.5s;
+  }
+  
+  
+  main {
     text-align: center;
     font-family: 'Roboto', sans-serif;
-    margin: 1px 20px;
-}
-
-.players{
+    margin: 1px 20px; }
+  
+  .players {
     padding-left: 20px;
-    padding-right: 20px;
-}
+    padding-right: 20px; }
 
 
 /*estilos de resumenes*/
@@ -159,7 +121,7 @@ img {
 footer{
     margin-top: 100%;
     width: 100%;
-    background-color: rgb(153, 217, 234);
+    background-color: $color-barras;
     font-family: 'Roboto', sans-serif;
     bottom: 0;
 }
